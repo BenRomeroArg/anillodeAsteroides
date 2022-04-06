@@ -39,17 +39,7 @@ $(document).ready(function(){
     
     }
     
-  // $('#cont').hover(function () {
-         
-  //       $('#cont').animate({left:"10px",top:"200px"});
-  //       $('#cont').hide(500);
-          
-  //     }, function () {
-  //         $('#cont').animate({left: "1200px", top:"200px"});
-  //         $('#cont').show(1000);          
-  //     }
-  // );
-
+  
       
 
 });
