@@ -2,7 +2,7 @@ $(document).ready(function(){
   
     $('#izquierda').click(function(){
           
-        mover(4,getX('objeto'));
+        mover(5,getX('objeto'));
     });
     
     $('#derecha').click(function(){ 
@@ -13,17 +13,17 @@ $(document).ready(function(){
       
     $('#arriba').click(function(){
        
-        mover(getY("objeto"),-10);
+        mover(getY("objeto"),1);
     });
     $('#abajo').click(function(){
          
-          mover(getY('objeto'),25);
+          mover(getY('objeto'),40);
     });
    
    
     function mover(x,y){
             $('#objeto').animate({top:""+y+"%",left:""+x+"%"},
-            {duration:900
+            {duration:1000
        });
     }
    
