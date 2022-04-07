@@ -115,7 +115,7 @@
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 4.7s ease-in-out 0s infinite normal none
+        animation: trayectoria 7.7s ease-in-out 0s infinite normal none
 
     }
     #impacto7{
@@ -141,7 +141,7 @@
         transition: 2.5s;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 4.5s ease-in-out 0s infinite normal none
+        animation: trayectoria 6.5s ease-in-out 0s infinite normal none
 
 
     }
@@ -157,7 +157,7 @@
         transition: 2s;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 5.5s ease-in-out 0s infinite normal none;
+        animation: trayectoria 8.5s ease-in-out 0s infinite normal none;
 
     }
     @keyframes trayectoria {
@@ -165,36 +165,44 @@
            transform: translateX(-2900px);
         }
     }
-    #controles{
-        width: 800px;
-        height: 200px;
+    .impacc{
+        background-color: red;
+        transition: 0.5s;
     }
+   
     button{
-        position: relative;
-        top: 650px;
+        
+        
+        position:sticky;
         width:150px;
         height:150px;
+        margin-top: 500px;
         border-radius:100%;
         background-color: chartreuse;
         color:black;
-        font-size: medium;
+        font-size:xx-large;
         padding-left: 10px;
+        margin-left: 20px;
+        
+        right: 200px;
+       
     }
+    
     .frame{
         background-image: url('fondo2.png');
         background-size:cover;
         position: absolute;
         left: -10px;
         top:0px;
-        width: 5200px;
-        height: 900px;
+        width: 3600px;
+        height: 800px;
         transition: 2s;
         animation: fondoX 20s ease-in-out 2s infinite normal none;
 
     }
     @keyframes fondoX {
         100%{
-            left: -2900px;
+            left: -2000px;
             
         }
         
@@ -202,30 +210,26 @@
    
 </style>
 <body>
-
     <div class="frame"></div>
-      
-    <span id ="impacto"></span> 
-    <span id ="impacto2"></span>  
-    <span id ="impacto3"></span>  
-    <span id ="impacto4"></span>
-    <span id ="impacto5"></span> 
-    <span id ="impacto6"></span>  
-    <span id ="impacto7"></span>  
-    <span id ="impacto8"></span>
-      
-    <span id="objeto">
-        <span id="escudo"></span>
-        <span class="area_1"></span>
-        <span class="area_2"></span>
-    </span>
-    <div id ="controles">  
-      <button id="izquierda"><<</button>
-      <button id="arriba">up</button>
-      <button id="abajo">down</button>
-      <button id="derecha">>></button>
+    <span id ="impacto" class="impact"></span> 
+    <span id ="impacto2" class="impact"></span>  
+    <span id ="impacto3" class ="impact"></span>  
+    <span id ="impacto4" class="impact"></span>
+    <span id ="impacto5"class="impact"></span> 
+    <span id ="impacto6"class="impact"></span>  
+    <span id ="impacto7"class="impact"></span>  
+    <span id ="impacto8" class="impact"></span>
+     
+    <div id="objeto">
+          <span id="escudo" class=""></span>
+          <span class="area_1"></span>
+          <span class="area_2"></span> 
     </div>
-   
+    <button id="izquierda">R</button>
+    <button id="arriba">up</button>
+    <button id="abajo">down</button>
+    <button id="derecha">F</button>
+     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>

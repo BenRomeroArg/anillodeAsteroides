@@ -39,7 +39,18 @@ $(document).ready(function(){
     
     }
     
+    var ast = $('.impact'); 
+    var nave= $('#escudo');
+    if(nave.width <= ast.width){
+        agregarColision('impact');
+    }
+    function agregarColision(target){
+            var targetA = $('.'+target).addClass('impacc');
+            
+            return targetA;
+    }
   
+    
       
 
 });
