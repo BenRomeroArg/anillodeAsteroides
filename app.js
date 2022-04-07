@@ -2,12 +2,12 @@ $(document).ready(function(){
   
     $('#izquierda').click(function(){
           
-        mover(2,getX('objeto'));
+        mover(4,getX('objeto'));
     });
     
     $('#derecha').click(function(){ 
         
-        mover(45 ,getX("objeto"));
+        mover(40,getX("objeto"));
        
     });
       
@@ -17,7 +17,7 @@ $(document).ready(function(){
     });
     $('#abajo').click(function(){
          
-          mover(getY('objeto'),45);
+          mover(getY('objeto'),25);
     });
    
    
@@ -39,18 +39,4 @@ $(document).ready(function(){
     
     }
     
-    var ast = $('.impact'); 
-    var nave= $('#escudo');
-    if(nave.width <= ast.width){
-        agregarColision('impact');
-    }
-    function agregarColision(target){
-            var targetA = $('.'+target).addClass('impacc');
-            
-            return targetA;
-    }
-  
-    
-      
-
 });

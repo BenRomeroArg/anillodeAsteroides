@@ -17,11 +17,11 @@
         position: absolute;
         width: 200px;
         height: 100px;
-        margin-left: 0px;
+        margin-left: -80px;
         padding-left:0px;
-        top: 5px;
-        opacity: 0.333;
-        background-color: rgb(19, 189, 430);
+        top: 15px;
+        opacity: 0.633;
+        background-color:rgb(111, 128, 133); ;
         border-radius: 100%;
         
     }
@@ -30,10 +30,10 @@
         position: absolute;
         width: 200px;
         height: 100px;
-        margin-left: -20px;
+        margin-left: -80px;
         top: -60px;
-        opacity: 0.433;
-        background-color: rgb(19, 189, 430);
+        opacity: 0.533;
+        background-color: rgb(111, 128, 133);
         border-radius: 100%;    
     }
     #escudo{
@@ -42,9 +42,10 @@
         height: 100px;
         margin-left: 0px;
         top: -30px;
-        opacity: 0.633;
+        opacity: 0.433;
         background-color: rgb(19, 189, 430);
-        border-radius: 100%; 
+        border-radius: 100%;
+        box-shadow: -100px 20px 40px 5px rgba(7, 181, 234, 0.519);
     }
     #objeto{
         background-color: rgb(111, 128, 133);
@@ -55,15 +56,29 @@
         position: fixed;
         border-radius: 100%;
         align-items: center;
-        animation: rotarO 5s ease-in-out 0s infinite normal none
+        animation: rotarO 5s ease-in-out 0s infinite normal none;
 
     }
     @keyframes rotarO {
         50%{
-            transform: translateX(50px);
+            transform: translateX(80px);
         }
     }
-    #impacto, #impacto5{
+    #impacto{
+        background-image: url('asteroide2.png');
+        background-size: cover;
+        top: 250px;
+        left: 2200px;
+        width: 290px;
+        height: 290px;
+        position: fixed;
+        border-radius: 100%;
+        align-items: center; 
+        animation: trayectoria 30s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
+
+    } 
+    #impacto5{
         background-image: url('asteroid.png');
         top: 250px;
         left: 2200px;
@@ -72,7 +87,8 @@
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 6s ease-in-out 0s infinite normal none
+        animation: trayectoria 10s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
     #impacto2{
@@ -81,12 +97,11 @@
         left: 1200px;
         width: 30px;
         height: 30px;
-        transform: scale(0.5);
-        transition: 1.5s;
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 10s ease-in-out 0s infinite normal none
+        animation: trayectoria 15s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
     #impacto6{
@@ -96,26 +111,25 @@
         left: 2500px;
         width: 90px;
         height: 90px;
-        transform: scale(0.5);
-        transition: 1.3s;
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 8s ease-in-out 0s infinite normal none
+        animation: trayectoria 38s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
     #impacto3{
         background-image: url('asteroid.png');
+        background-size: cover;
         top: 280px;
         left: 2700px;
-        width: 50px;
-        height: 50px;
-        transform: scale(0.5);
-        transition: 1.3s;
+        width: 70px;
+        height: 70px;
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 7.7s ease-in-out 0s infinite normal none
+        animation: trayectoria 20.7s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
     #impacto7{
@@ -127,67 +141,66 @@
         position: fixed;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 5s ease-in-out 0s infinite normal none
+        animation: trayectoria 19s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
     #impacto4{
-        background-image: url('asteroid.png');
-        top: 150px;
+        background-image: url('asteroide2.png');
+        background-size: cover;
+        top: 190px;
         left: 2200px;
-        width: 20px;
-        height: 20px;
-        position: fixed;
-       
-        transition: 2.5s;
+        width: 100px;
+        height: 100px;
+        position: fixed;    
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 6.5s ease-in-out 0s infinite normal none
-
-
+        animation: trayectoria 26.5s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
     }
     #impacto8{
         background-image: url('asteroid.png');
         background-size: cover;
-        top: 650px;
-        left: 2200px;
-        width: 60px;
-        height: 60px;
+        top: 150px;
+        left: 2500px;
+        width: 370px;
+        height: 370px;
         position: fixed;
-        transform: scale(1.5);
-        transition: 2s;
         border-radius: 100%;
         align-items: center; 
-        animation: trayectoria 8.5s ease-in-out 0s infinite normal none;
+        animation: trayectoria 60s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 20px 15px rgba(111, 128, 133, 0.332);
 
     }
     @keyframes trayectoria {
        100%{
-           transform: translateX(-2900px);
+           transform: translateX(-2900px) rotate(1280deg);
         }
     }
     .impacc{
-        background-color: red;
-        transition: 0.5s;
+        transition: 1.5s all;
+        transform: scale(2.5);
     }
    
     button{
-        
-        
         position:sticky;
-        width:150px;
-        height:150px;
-        margin-top: 500px;
+        width:120px;
+        height:120px;
+        margin-top: 10px;
         border-radius:100%;
         background-color: chartreuse;
         color:black;
         font-size:xx-large;
         padding-left: 10px;
-        margin-left: 20px;
+        margin-left: 20px; 
         
-        right: 200px;
        
     }
-    
+    .control{
+        top: 600px;
+        display: flex;
+        flex-direction: column;
+    }
     .frame{
         background-image: url('fondo2.png');
         background-size:cover;
@@ -195,14 +208,24 @@
         left: -10px;
         top:0px;
         width: 3600px;
-        height: 800px;
+        height: 700px;
         transition: 2s;
-        animation: fondoX 20s ease-in-out 2s infinite normal none;
+        animation: fondoX 27s ease-in-out 2s infinite normal none;
 
+    }
+    @media (max-width: 450px) {
+        .frame{
+            height: 900px;
+        }
+        .control {
+             margin-top: 800px;
+             flex-direction: row;
+        }
+        
     }
     @keyframes fondoX {
         100%{
-            left: -2000px;
+            left: -2200px;
             
         }
         
@@ -225,11 +248,12 @@
           <span class="area_1"></span>
           <span class="area_2"></span> 
     </div>
-    <button id="izquierda">R</button>
-    <button id="arriba">up</button>
-    <button id="abajo">down</button>
-    <button id="derecha">F</button>
-     
+    <div class="control">
+      <button id="izquierda">R</button>
+      <button id="arriba">up</button>
+      <button id="abajo">down</button>
+      <button id="derecha">F</button>
+    </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
