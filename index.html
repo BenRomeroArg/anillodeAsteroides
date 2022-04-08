@@ -173,6 +173,20 @@
         box-shadow: 20px 20px 20px 15px rgba(111, 128, 133, 0.332);
 
     }
+    #impacto10{
+        background-image: url('asteroid.png');
+        background-size: cover;
+        top: 150px;
+        left: 2500px;
+        width: 370px;
+        height: 370px;
+        position: fixed;
+        border-radius: 100%;
+        align-items: center; 
+        animation: trayectoria 60s ease-in-out 0s infinite normal none;
+        box-shadow: 20px 20px 20px 15px rgba(111, 128, 133, 0.332);
+
+    }
     @keyframes trayectoria {
        100%{
            transform: translateX(-2900px) rotate(1280deg);
@@ -180,7 +194,7 @@
     }
     .impacc{
         transition: 1.5s all;
-        transform: scale(2.5);
+        transform: rotate(360deg);
     }
    
     button{
@@ -206,7 +220,7 @@
         background-image: url('fondo2.png');
         background-size:cover;
         position: absolute;
-        left: -10px;
+        left: -5px;
         top:0px;
         width: 3600px;
         height: 700px;
@@ -216,17 +230,20 @@
     }
     @media (max-width: 450px) {
         .frame{
-            height: 900px;
+            height: 1000px;
         }
         .control {
              margin-top: 900px;
              flex-direction: row;
         }
+        button{
+            margin-top: 200px;
+        }
         
     }
     @keyframes fondoX {
         100%{
-            left: -2200px;
+            left: -2000px;
             
         }
         

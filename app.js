@@ -3,11 +3,11 @@ $(document).ready(function(){
     $('#izquierda').click(function(){
           
         mover(5,getX('objeto'));
-    });
+    });    
     
     $('#derecha').click(function(){ 
         
-        mover(40,getX("objeto"));
+        mover(30,getX("objeto"));
        
     });
       
@@ -17,10 +17,9 @@ $(document).ready(function(){
     });
     $('#abajo').click(function(){
          
-          mover(getY('objeto'),40);
+          mover(getY('objeto'),25);
     });
-   
-   
+    
     function mover(x,y){
             $('#objeto').animate({top:""+y+"%",left:""+x+"%"},
             {duration:1000
@@ -35,8 +34,8 @@ $(document).ready(function(){
     }
     function getY(obj){
         var cord_y=$('#'+obj).css('top');
-         return cord_y;
-    
+         return cord_y; 
     }
+    
     
 });
