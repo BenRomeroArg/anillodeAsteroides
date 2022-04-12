@@ -23,17 +23,33 @@ $(document).ready(function(){
     $('#arma').click(function(){
         
         if(arma){
-            drawMina();
+            drawMisil();
+          
             
         }else{
-            $('#mina').remove();
-        }
+            $('#mina').append('<span class="bomb"></span>');
+            removerMisil();  
+            
+      
+        };
         arma = !arma;
                
     });
+    function removerMisil(){
+        
+        setTimeout(()=>{
+            $('#mina').remove();
 
-    function drawMina (){
+        },2000);
+        
+        
+
+    }
+
+    
+    function drawMisil (){
         $('#trayecto').append('<span id="mina"></span>');
+        
         moverX(60,getW('mina'));
        
     }
@@ -43,10 +59,8 @@ $(document).ready(function(){
             {duration:1000
         });
         $('#trayecto').animate({top:""+y+"%",left:""+x+"%"},
-            {duration:1000
-        });
-       
-        
+        {duration:1000
+    });  
     }
     
     function moverX(x,y){

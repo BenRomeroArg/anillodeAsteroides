@@ -36,6 +36,7 @@
         background-color: rgb(111, 128, 133);
         border-radius: 100%;    
     }
+    
     #escudo{
         position: absolute;
         width: 100px;
@@ -45,7 +46,7 @@
         opacity: 0.433;
         background-color: rgb(19, 189, 430);
         border-radius: 100%;
-        box-shadow: -70px 20px 40px 5px rgba(7, 181, 234, 0.759);
+        box-shadow: -20px 10px 20px 5px rgba(7, 181, 234, 0.759);
     }
     #mina{
         margin-top:20px;
@@ -63,12 +64,24 @@
             transform: translateX(2000px);
         }
     }*/
-       
+     .bomb{
+        margin-top:-15px;
+        margin-left: -30px;
+        position: fixed;
+        width: 85px;
+        height: 65px;
+        opacity: 0.933;
+        background-color: black;
+        border-radius: 80%;
+        box-shadow: -10px 0px 15px 15px rgba(7, 234, 117, 0.858);
+        transform: scale(2.5);
+        transition: 0.9s;
+     }  
     #trayecto{
         
         margin-left: 175px;
         margin-top:100px;
-        width:3000px;
+        width:1000px;
         height: 40px;
         position: fixed;
         /*background-color: rgba(69, 182, 216, 0.332);*/
@@ -83,7 +96,7 @@
         position: fixed;
         border-radius: 100%;
         align-items: center;
-        box-shadow: -50px 20px 40px 5px rgba(7, 234, 15, 0.699);
+        box-shadow: -20px 0px 20px 5px rgba(7, 234, 15, 0.699);
         animation: rotarO 5s ease-in-out 0s infinite normal none;
 
     }
@@ -221,7 +234,7 @@
     }
     .impacc{
         transition: 1.5s all;
-        transform: rotate(360deg);
+        
     }
    
     button{
@@ -291,8 +304,7 @@
     <div id="objeto">
         <span id="escudo" class=""></span>
         <span class="area_1"></span>
-        <span class="area_2"></span>
-          
+        <span class="area_2"></span>    
     </div>
     <span id="trayecto"></span>
     <div class="control">
@@ -300,7 +312,7 @@
       <button id="arriba">up</button>
       <button id="abajo">down</button>
       <button id="derecha">F</button>
-      <button id = "arma">0</button>
+      <button id = "arma" value="arma">0</button>
     </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
