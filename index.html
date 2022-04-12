@@ -47,6 +47,33 @@
         border-radius: 100%;
         box-shadow: -70px 20px 40px 5px rgba(7, 181, 234, 0.759);
     }
+    #mina{
+        margin-top:20px;
+        position: fixed;
+        width: 100px;
+        height: 5px;
+        opacity: 0.833;
+        background-color: rgba(161, 10, 243, 0.59);
+        border-radius: 80%;
+        box-shadow: -50px 0px 5px 5px rgba(7, 234, 45, 0.759);
+        /*animation: direccion 3s ease-in-out 0s initial normal none;*/
+    }
+    /*@keyframes direccion {
+        100%{
+            transform: translateX(2000px);
+        }
+    }*/
+       
+    #trayecto{
+        
+        margin-left: 175px;
+        margin-top:100px;
+        width:3000px;
+        height: 40px;
+        position: fixed;
+        /*background-color: rgba(69, 182, 216, 0.332);*/
+        animation: rotarO 5s ease-in-out 0s infinite normal none;
+    }
     #objeto{
         background-color: rgb(111, 128, 133);
         margin-top:100px;
@@ -262,15 +289,18 @@
     <span id ="impacto8" class="impact"></span>
      
     <div id="objeto">
-          <span id="escudo" class=""></span>
-          <span class="area_1"></span>
-          <span class="area_2"></span> 
+        <span id="escudo" class=""></span>
+        <span class="area_1"></span>
+        <span class="area_2"></span>
+          
     </div>
+    <span id="trayecto"></span>
     <div class="control">
       <button id="izquierda">R</button>
       <button id="arriba">up</button>
       <button id="abajo">down</button>
       <button id="derecha">F</button>
+      <button id = "arma">0</button>
     </div> 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="app.js"></script>
