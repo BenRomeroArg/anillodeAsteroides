@@ -54,7 +54,7 @@
         width: 100px;
         height: 5px;
         opacity: 0.833;
-        background-color: rgba(161, 10, 243, 0.59);
+        background-color: black;
         border-radius: 80%;
         box-shadow: -50px 0px 5px 5px rgba(7, 234, 45, 0.759);
         /*animation: direccion 3s ease-in-out 0s initial normal none;*/
@@ -64,19 +64,45 @@
             transform: translateX(2000px);
         }
     }*/
-     .bomb{
-        margin-top:-15px;
-        margin-left: -30px;
+    .bomb{
+        margin-top: -30px;
+        margin-left: -40px;
         position: fixed;
-        width: 85px;
-        height: 65px;
+        width: 80px;
+        height: 50px;
         opacity: 0.933;
         background-color: black;
         border-radius: 80%;
-        box-shadow: -10px 0px 15px 15px rgba(7, 234, 117, 0.858);
+        box-shadow: -10px 0px 15px 15px rgba(7, 117, 234, 0.858);
         transform: scale(2.5);
-        transition: 0.9s;
-     }  
+        transition: 0.5s;
+    }
+    .bomb_2{
+        margin-top: -25px;
+        margin-left: -10px;
+        position: fixed;
+        width: 75px;
+        height: 50px;
+        opacity: 0.933;
+        background-color: black;
+        border-radius: 80%;
+        box-shadow: -20px 0px 25px 25px rgba(7, 215, 234, 0.858);
+        transform: scale(1.5);
+        transition: 1s;
+    }
+    .bomb_3{
+        margin-top: -25px;
+        margin-left: 10px;
+        position: fixed;
+        width: 70px;
+        height: 55px;
+        opacity: 0.933;
+        background-color: black;
+        border-radius: 80%;
+        box-shadow: -35px 0px 45px 45px #5bdba497;
+        transform: scale(0.7);
+        transition: 1.2s;
+    }  
     #trayecto{
         
         margin-left: 175px;
@@ -105,7 +131,7 @@
             transform: translateX(90px);
         }
     }
-    #impacto{
+    .impacto{
         background-image: url('asteroide2.png');
         background-size: cover;
         top: 250px;
@@ -119,7 +145,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     } 
-    #impacto5{
+    .impacto5{
         background-image: url('asteroid.png');
         top: 250px;
         left: 2200px;
@@ -132,7 +158,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto2{
+    .impacto2{
         background-image: url('asteroid.png');
         top: 80px;
         left: 1200px;
@@ -145,7 +171,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto6{
+    .impacto6{
         background-image: url('asteroid.png');
         background-size: cover;
         top: 280px;
@@ -159,7 +185,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto3{
+    .impacto3{
         background-image: url('asteroid.png');
         background-size: cover;
         top: 280px;
@@ -173,7 +199,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto7{
+    .impacto7{
         background-image: url('asteroid.png');
         top: 450px;
         left: 2500px;
@@ -186,7 +212,7 @@
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto4{
+    .impacto4{
         background-image: url('asteroide2.png');
         background-size: cover;
         top: 190px;
@@ -199,7 +225,7 @@
         animation: trayectoria 26.5s ease-in-out 0s infinite normal none;
         box-shadow: 20px 20px 40px 5px rgba(111, 128, 133, 0.332);
     }
-    #impacto8{
+    .impacto8{
         background-image: url('asteroid.png');
         background-size: cover;
         top: 150px;
@@ -213,7 +239,7 @@
         box-shadow: 20px 20px 20px 15px rgba(111, 128, 133, 0.332);
 
     }
-    #impacto10{
+    .impacto10{
         background-image: url('asteroid.png');
         background-size: cover;
         top: 150px;
@@ -232,10 +258,7 @@
            transform: translateX(-2900px) rotate(1280deg);
         }
     }
-    .impacc{
-        transition: 1.5s all;
-        
-    }
+    
    
     button{
         position:sticky;
@@ -275,8 +298,10 @@
         .control {
              margin-top: 900px;
              flex-direction: row;
+             margin-left: 10px;
         }
         button{
+            margin-left: 10px;
             margin-top: 200px;
         }
         
@@ -292,14 +317,14 @@
 </style>
 <body>
     <div class="frame"></div>
-    <span id ="impacto" class="impact"></span> 
-    <span id ="impacto2" class="impact"></span>  
-    <span id ="impacto3" class ="impact"></span>  
-    <span id ="impacto4" class="impact"></span>
-    <span id ="impacto5"class="impact"></span> 
-    <span id ="impacto6"class="impact"></span>  
-    <span id ="impacto7"class="impact"></span>  
-    <span id ="impacto8" class="impact"></span>
+    <span class="impacto" id="impact"></span> 
+    <span class="impacto2" id="impact"></span>  
+    <span class="impacto3" id ="impact"></span>  
+    <span class="impacto4" id="impact"></span>
+    <span class="impacto5" id="impact"></span> 
+    <span class="impacto6" id="impact"></span>  
+    <span class="impacto7" id="impact"></span>  
+    <span class="impacto8" id="impact"></span>
      
     <div id="objeto">
         <span id="escudo" class=""></span>

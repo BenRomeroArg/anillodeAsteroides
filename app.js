@@ -27,17 +27,17 @@ $(document).ready(function(){
           
             
         }else{
-            $('#mina').append('<span class="bomb"></span>');
+            $('#mina').append('<span class="bomb"></span>','<span class="bomb_2"></span>','<span class="bomb_3"></span>');
             removerMisil();  
-            
-      
         };
         arma = !arma;
                
     });
+    var ladoAs = $('#impact');
     function removerMisil(){
         
         setTimeout(()=>{
+            
             $('#mina').remove();
 
         },2000);
